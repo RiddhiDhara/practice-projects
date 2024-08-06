@@ -1,0 +1,59 @@
+body {
+    background-color: #212121;
+    color: rgb(176, 171, 171);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.mid {
+    font-weight: 800;
+    font-size: 20px;
+    padding: 0 20px 0 20px;
+    color: rgb(179, 228, 105);
+}
+
+.header button {
+    font-size: 15px;
+    padding: 5px 10px 5px 10px;
+    background-color: greenyellow;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main h1 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+form{
+    line-height: 4;
+}
+
+.calculate{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 20px;
+    border-radius: 10px;
+    background-color: greenyellow;
+}
+
+.result{
+    font-size: 30px;
+    color: greenyellow;
+    line-height: 2;
+}
+
+.weight_guide{
+    line-height: 1;
+}

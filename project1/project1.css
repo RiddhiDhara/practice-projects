@@ -1,0 +1,111 @@
+body {
+    background-color: #212121;
+    color: rgb(176, 171, 171);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.mid {
+    font-weight: 800;
+    font-size: 20px;
+    padding: 0 20px 0 20px;
+    color: rgb(179, 228, 105);
+}
+
+.header button {
+    font-size: 15px;
+    padding: 5px 10px 5px 10px;
+    background-color: greenyellow;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main h1 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.color-palette {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 50px;
+    /* Space between boxes */
+}
+
+.color-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+    transition: 1s ease-in-out;
+}
+
+/* Media query for 3 boxes in a row */
+@media (max-width: 1024px) {
+    .color-palette {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Media query for 2 boxes in a row */
+@media (max-width: 768px) {
+    .color-palette {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Media query for 1 box in a row */
+@media (max-width: 480px) {
+    .color-palette {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Example colors for the boxes */
+.color-box:nth-child(1) {
+    background-color: #dd3737;
+}
+
+.color-box:nth-child(1):hover {
+    box-shadow: 0px 10px 20px greenyellow;
+}
+
+.color-box:nth-child(2) {
+    background-color: #33FF57;
+}
+
+.color-box:nth-child(2):hover {
+    box-shadow: 0px 10px 20px greenyellow;
+}
+
+.color-box:nth-child(3) {
+    background-color: #3357FF;
+}
+
+.color-box:nth-child(3):hover {
+    box-shadow: 0px 10px 20px greenyellow;
+}
+
+.color-box:nth-child(4) {
+    background-color: #F1C40F;
+}
+
+.color-box:nth-child(4):hover {
+    box-shadow: 0px 10px 20px greenyellow;
+}
